@@ -1,0 +1,13 @@
+SHOW DATABASES;
+SHOW TABLES;
+USE SGBD;
+CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED  BY 'contraseña';
+GRANT USAGE ON *.* TO 'lauracosorio'@'localhost' IDENTIFIED BY 'laura123';
+GRANT ALL PRIVILEGES ON sgbd.* TO 'lauracosorio'@'localhost' IDENTIFIED BY 'laura123';
+
+USE SGBD;
+
+CREATE TABLE TIPO_DOCUMENTO(
+    CODIGO VARCHAR(3) PRIMARY KEY,
+    DESCRIPCION VARCHAR(250) NOT NULL
+);
